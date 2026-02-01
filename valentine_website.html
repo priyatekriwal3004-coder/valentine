@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(to bottom right, #3a1c71, #d76d77, #ffaf7b);
+      color: #f5f5f5;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: 300;
+    }
+
+    nav {
+      margin: 30px 0;
+    }
+
+    nav button {
+      background: #2c2c54;
+      color: #ffffff;
+      border: none;
+      padding: 12px 20px;
+      margin: 8px;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background: #ffe6eb;
+      transform: scale(1.05);
+    }
+
+    section {
+      display: none;
+      background: rgba(0,0,0,0.4);
+      margin: 20px auto;
+      padding: 30px;
+      max-width: 700px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 15px;
+      margin: 15px 0;
+      color: #ffffff;
+    }
+
+    .reason-box {
+      font-size: 1.3rem;
+      margin: 20px 0;
+      min-height: 60px;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Happy Valentine’s Day, My Love 💕</h1>
+    <h2>Just for You, Always</h2>
+    <p>— From: Your Priyu 💖</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('story')">Our Story</button>
+    <button onclick="showSection('notes')">Love Notes</button>
+    <button onclick="showSection('quiz')">Quiz</button>
+    <button onclick="showSection('reasons')">Reasons I Love You</button>
+    <button onclick="showSection('surprise')">Surprise</button>
+    <button onclick="showSection('distance')">Our Distance</button>
+  </nav>
+
+  <!-- Our Story -->
+  <section id="story" class="active">
+    <h2>Our Love Story 💌</h2>
+
+    <div class="card">
+      <h3>How We Met</h3>
+      <p>We first met on 28th dec and I knew you were special from the start.</p>
+    </div>
+
+    <div class="card">
+      <h3>First Call / Date</h3>
+      <p>I still remember that night when we looked into each other eyes like it was yesterday.</p>
+    </div>
+
+    <div class="card">
+      <h3>My Favorite Memory</h3>
+      <p>My favorite moment with you is that last whole day when we were together and the last eye contact we made on the station.</p>
+    </div>
+
+    <div class="card">
+      <h3>Our Future</h3>
+      <p>I can’t wait to love and be with you for life. Forever sounds perfect with you.</p>
+    </div>
+  </section>
+
+  <!-- Love Notes -->
+  <section id="notes">
+    <h2>Little Love Notes 💌</h2>
+
+    <div class="card">
+      <p>"No matter how far you are, you’re always close to my heart." 💖</p>
+    </div>
+
+    <div class="card">
+      <p>"Every day with you, even from miles away, feels special." 🌸</p>
+    </div>
+
+    <div class="card">
+      <p>"You are my favorite notification, my favorite voice, my favorite person." 🥰</p>
+    </div>
+
+    <div class="card">
+      <p>"One day, I’ll hold your hand and never let go." ✨</p>
+    </div>
+  </section>
+
+  <!-- Reasons -->
+  <section id="reasons">
+    <h2>Reasons I Love You 💖</h2>
+
+    <div class="reason-box" id="reasonBox">
+      Click the button to see a reason!
+    </div>
+
+    <button onclick="showReason()">Show Me 💕</button>
+  </section>
+
+  <!-- Quiz -->
+  <section id="quiz">
+    <h2>Love Quiz 🥰</h2>
+
+    <p><strong>Question:</strong> Who fell in love first?</p>
+
+    <button onclick="quizAnswer('wrong')">You 😏</button>
+    <button onclick="quizAnswer('right')">Me 💖</button>
+
+    <p id="quizResult"></p>
+  </section>
+
+  <!-- Surprise -->
+  <section id="surprise">
+    <h2>For You Only 💝</h2>
+
+    <p>
+      My love,I just wanted to tell you how much you mean to me.
+      Even though we’re far apart, I feel you with me in every thought and every moment.
+      You make my heart lighter, my days brighter, and my life so much better just by being you.
+      I love the way you understand me, support me, and make me feel safe—even from a distance.
+
+      I miss you more than words can say, and I can’t wait until we’re together again.
+      Until then, know that you’re always in my heart.
+    </p>
+
+    <p>
+      I promise to love you more every single day. 💕
+    </p>
+
+    <h3>💋 One Million Kisses Coming Your Way 💋</h3>
+  </section>
+
+  <!-- Distance Map -->
+  <section id="distance">
+    <h2>Across the Miles 🌍❤️</h2>
+
+    <p>Even though we’re far apart, our hearts are always connected.</p>
+
+    <div class="card">
+      <h3>📍 You</h3>
+      <p>SURAT</p>
+    </div>
+
+    <div class="card">
+      <h3>📍 Me</h3>
+      <p>KOLKATA</p>
+    </div>
+
+    <p style="font-size:1.2rem; margin-top:20px;">
+      Distance means nothing when love means everything 💕
+    </p>
+  </section>
+
+  <footer>
+    Made with ❤️ just for you
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => section.classList.remove('active'));
+
+      document.getElementById(id).classList.add('active');
+    }
+
+    const reasons = [
+      "You always make me smile.",
+      "You understand me like no one else.",
+      "You support my dreams.",
+      "You’re my safe place.",
+      "You’re cute even when sleepy.",
+      "You make distance feel small.",
+      "You love me the way I am.",
+      "You feel like home.",
+      "You’re my peace in chaos.",
+      "You’re my favorite person forever."
+    ];
+
+    function showReason() {
+      const random = Math.floor(Math.random() * reasons.length);
+      document.getElementById("reasonBox").innerText = reasons[random];
+    }
+
+    function quizAnswer(type) {
+      const result = document.getElementById("quizResult");
+
+      if (type === "right") {
+        result.innerText = "Correct! But you fell harder 😘💖";
+      } else {
+        result.innerText = "Wrong! But I love you anyway 😜💕";
+      }
+    }
+  </script>
+
+</body>
+</html>
